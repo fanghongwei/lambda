@@ -5,8 +5,6 @@ const port = 3000
 const bodyParser = require('body-parser');
 app.use(bodyParser.text({ type: 'text/html' }))
 
-const concat = require('concat-stream');
-
 app.get('/', (req, res) => res.send('Hello World!'))
 
 app.post('/', function (req, res) {
